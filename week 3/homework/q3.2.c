@@ -13,7 +13,7 @@ int calculatepwoer(int x, int y)
 
 int main(void)
 {
-    printf("enter: \n");
+    printf("enter the base number: \n");
     scanf("%i",&x);
     for(power=0; power<10; power++)
     {
