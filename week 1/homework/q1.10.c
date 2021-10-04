@@ -14,8 +14,8 @@ int main(void)
     drawLine(30, 250, 30, 50);
     drawString("0", 12, 250);
     drawString("50", 10, 200);
-    drawString("100", 8, 150);
-    drawString("150", 8, 100);
+    drawString("100", 6, 150);
+    drawString("150", 6, 100);
 
     //drawbars
     setColour(blue);

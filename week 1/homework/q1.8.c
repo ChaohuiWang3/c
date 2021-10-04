@@ -4,10 +4,8 @@
 int main(void)
 {
     int n = 0;
-    while (n<150)
+    for(n=0; n<130; n=n+10)
     {
-        drawOval(60,60,60+n, 70+n);
-        n += 10;
+        drawOval(60,70,60+n,70+n);
     }
-    return 0;
 }

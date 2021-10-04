@@ -1,16 +1,16 @@
-#include "graphics.c" 
-#include <math.h> 
-#define PI 3.14159265
+#include<stdio.h>
+#include"graphics.c"
+#include<math.h>
+
+
 int main(void)
-{ 
- int width = 600;
- int height = 300;
- int x = 0;
- while(x<1000)
- { 
-     x += 1;
-    double y = (height / 2) - sin(x*(PI/180)) * 100;
-    drawRect(x,(int)y,1,1);
- }
- return 0;
+{
+    int x;
+    double y;
+    for(x=0; x<600; x++)
+    {
+        y = 150-(sin(x*(M_PI/180))*(90/M_PI_2));
+        drawRect(x, (int)y,1,1);
+    }
+    return 0;
 }
