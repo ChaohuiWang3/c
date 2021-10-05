@@ -1,22 +1,22 @@
 #include<stdio.h>
 
-int x,y;
+int base,number;
 int power;
-int calculatepwoer(int x, int y)
+int calculatepwoer(int base, int number)
 {
-    int a;
-    a = 1;
-    for(y=0; y<power; y++)
-    {a = a*x;}
-    return a;
+    int initial;
+    initial = 1;
+    for(number=0; number<power; number++)
+    {initial = initial * base;}
+    return initial;
 }
 
 int main(void)
 {
     printf("enter the base number: \n");
-    scanf("%i",&x);
+    scanf("%i",&base);
     for(power=0; power<10; power++)
     {
-        printf("%i ^ %i = %i\n",x,power,calculatepwoer(x,power));
+        printf("%i ^ %i = %i\n",base,power,calculatepwoer(base,power));
     }
 }
